@@ -1,5 +1,9 @@
 # CP Program
 
+### feat: change the content of Set.cpp
+
+* left things i'll use >>
+
 ### feat: Push All of the Previous Code
 
 ### 【CSES】 Coin Piles
@@ -14,11 +18,6 @@
 **Solved**
 
 * 不用真的算出 n! , 10 = 2 * 5 (找有幾個五的因數)
-
-### 【CSES】 Bit Strings
-
-**Solved**
-
 * ans = (ans * 2) % MOD;，確保不會超過 long long 的範圍
 
 ### 【AtCoder】 Beginner Contest 397 - D. Cubes

@@ -1,10 +1,12 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 /* Self Define */
+#define opt ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define mem(x, value) memset(x, value, sizeof(x));
 #define all(v) v.begin(), v.end()
 #define pii pair<int, int>
+#define pdd pair<double, double>
 #define pb push_back
 #define F first
 #define S second
@@ -21,5 +23,5 @@ const int MEMINF_VAL = 0x3F3F3F3F;
 const int MEMLLINF_VAL = 0x3F3F3F3F3F3F3F3F;
 
 signed main(){
-
+    opt;
 }
