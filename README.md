@@ -1,5 +1,26 @@
 # CP Program
 
+### feat: Push All of the Previous Code
+
+### 【CSES】 Coin Piles
+
+**Solved**
+
+* a + b 不是三的倍數就無法剛好拿完
+* 2b = a or a = ab 才會拿的玩
+
+### 【CSES】 Trailing Zeros
+
+**Solved**
+
+* 不用真的算出 n! , 10 = 2 * 5 (找有幾個五的因數)
+
+### 【CSES】 Bit Strings
+
+**Solved**
+
+* ans = (ans * 2) % MOD;，確保不會超過 long long 的範圍
+
 ### 【AtCoder】 Beginner Contest 397 - D. Cubes
 
 **Solved**
@@ -32,3 +53,10 @@
    * If no such pair exists, return $-1$
 
 ### feat: Initialize
+
+> [!NOTE]
+> How To Push Code
+> * git add `<File's name you want to push>`
+>   * OR git add .
+> * git commit -m "`<Commit Message>`"
+> * git push
