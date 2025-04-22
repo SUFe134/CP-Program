@@ -1,5 +1,7 @@
 # CP Program
 
+### feat: Create .gitignore and Remove Some Excute File and Folder
+
 ### feat: change the content of Set.cpp
 
 * left things i'll use >>
