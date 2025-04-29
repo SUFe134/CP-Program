@@ -1,5 +1,15 @@
 # CP Program
 
+### 【CSES】 Maximum Subarray Sum
+
+**Solved**
+
+* keypoint: kadane's algorithm
+    1. 概念：目前陣列和 ＋ 新數字 > 新數字，把新數字放進陣列和裡，不然就把新數字當作開頭
+    2. 作法：max_sum 紀錄當前最大和， cur 紀錄目前陣列和
+    cur = max(arr[i], arr[i] + cur); 如果陣列和 ＋ 新數字 > 新數字，cur 就會再加上這個數字，否則更新成新數字，代表從這個數字開始計算
+* time complex: O(n)
+
 ### feat: Modify .gitignore
 
 ### feat: Create .gitignore and Remove Some Excute File and Folder
