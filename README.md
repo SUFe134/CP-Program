@@ -1,14 +1,47 @@
 # CP Program
 
+### 【CSES】 Collecting Numbers 2
+**Solved**
+
+
+
+### 【CSES】 Collecting Numbers
+
+**Solved**
+
+* keypoint: 要從1 ~ n收集，但原始順序可能是亂的。記下每個值的位置，再根據值的順序判斷位置是否遞增。若不是遞增，代表這段數字需要一個新的 round
+    1.作法：arr[]儲存值，pos[arr[]]儲存值的位置，ans初設為1。比較當前數字的位置是否比前一個還小，如果是就要再跑下一次，ans++;
+
+### 【CSES】 Missing Coin Sum
+
+**Solved**
+
+* keypoint: 找出最小的正整數金額，它無法用這些硬幣的子集合加總出來
+    1. 概念：從最小無法建構的值（1）val 開始，如果當前的硬幣 x >= val ， 代表 val 是最小不能被建構的值，否則 x 可以接在目前的構造區段後面，擴大區段
+    2. 舉例：[1, 2, 2, 7, 9]
+       x = 1 <= val(1) -> 可以構造 [1], val = 1 + 1
+       x = 2 <= val(2) -> 可以構造 [1, 2, 1 + 2], val = 2 + 2
+       x = 2 < val(4) -> 可以構造 [1, 2, 3, 4, 5], val = 4 + 2
+       x = 7 > val(7) 沒辦法構造出 6 這個金額，所有比 6 小的硬幣都用過了，最多只能湊到 5
+* Algorithm: Greedy （貪心）
+### 【CSES】 Stick Lengths
+
+**Solved**
+
+* keypoint: 數學題-找中位數和各個數的差
+    1. 作法：把數字由小到大排序，找到中位數（n/2），算中位數和各數的差，要加絕對值，合即是答案
+
+
 ### 【CSES】 Maximum Subarray Sum
 
 **Solved**
 
-* keypoint: kadane's algorithm
+* keypoint:
     1. 概念：目前陣列和 ＋ 新數字 > 新數字，把新數字放進陣列和裡，不然就把新數字當作開頭
     2. 作法：max_sum 紀錄當前最大和， cur 紀錄目前陣列和
     cur = max(arr[i], arr[i] + cur); 如果陣列和 ＋ 新數字 > 新數字，cur 就會再加上這個數字，否則更新成新數字，代表從這個數字開始計算
 * time complex: O(n)
+* algorithm: kadane's
 
 ### feat: Modify .gitignore
 

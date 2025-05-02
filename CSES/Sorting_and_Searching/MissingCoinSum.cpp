@@ -14,7 +14,7 @@ using namespace std;
 #define ll long long
 
 const auto dir = vector< pair<int, int> > { {1, 0}, {0, 1}, {-1, 0}, {0, -1} };
-const int MAXN = 2e5 + 5;
+const int MAXN = 2e5 + 50;
 const int Mod = 1e9 + 7;
 const long long LLINF = 0x7FFFFFFFFFFFFFFF;
 const int INF = 0x7FFFFFFF;
@@ -22,18 +22,17 @@ const int MEMINF = 0x3F;
 const int MEMINF_VAL = 0x3F3F3F3F;
 const int MEMLLINF_VAL = 0x3F3F3F3F3F3F3F3F;
 
-int n, p[MAXN], ans;
+int n, arr[MAXN], val = 1;
 
 signed main(){
     opt;
     cin >> n;
-    for(int i = 0; i < n; ++i) cin >> p[i];
-    sort(p, p + n);
-    int mid = n / 2;
+    for(int i = 0; i < n; ++i) cin >> arr[i];
+    sort(arr, arr + n);
     for(int i = 0; i < n; ++i){
-        ans += abs(p[i] - p[mid]);
+        if(arr[i] > val) break;
+        else val += arr[i];
     }
-    cout << ans;
-
+    cout << val;
 
 }

@@ -22,18 +22,15 @@ const int MEMINF = 0x3F;
 const int MEMINF_VAL = 0x3F3F3F3F;
 const int MEMLLINF_VAL = 0x3F3F3F3F3F3F3F3F;
 
-int n, p[MAXN], ans;
+int n, arr[MAXN], ans = 1, pos[MAXN];
 
 signed main(){
     opt;
     cin >> n;
-    for(int i = 0; i < n; ++i) cin >> p[i];
-    sort(p, p + n);
-    int mid = n / 2;
     for(int i = 0; i < n; ++i){
-        ans += abs(p[i] - p[mid]);
+        cin >> arr[i];
+        pos[arr[i]] = i;
     }
+    for(int i = 2; i <= n; ++i) if(pos[i - 1] > pos[i]) ans++;
     cout << ans;
-
-
 }

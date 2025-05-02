@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/sufe/Documents/C++/CP-Program/CSES/Sorting_and_Searching/MissingCoinSum.out'
+relocations:
+  - { offset: 0x1F97D, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x226128, symBinAddr: 0x100192C08, symSize: 0x0 }
+  - { offset: 0x206FF, size: 0x8, addend: 0x0, symName: __ZL3dir, symObjAddr: 0x226110, symBinAddr: 0x100192BF0, symSize: 0x0 }
+  - { offset: 0x20792, size: 0x8, addend: 0x0, symName: _n, symObjAddr: 0x226108, symBinAddr: 0x100192BE8, symSize: 0x0 }
+  - { offset: 0x207B9, size: 0x8, addend: 0x0, symName: _arr, symObjAddr: 0x9F578, symBinAddr: 0x10000C058, symSize: 0x0 }
+  - { offset: 0x207D0, size: 0x8, addend: 0x0, symName: _val, symObjAddr: 0x750, symBinAddr: 0x10000C050, symSize: 0x0 }
+  - { offset: 0x20B9D, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_MissingCoinSum.cpp, symObjAddr: 0x640, symBinAddr: 0x100007AA0, symSize: 0xB8 }
+  - { offset: 0x21C3C, size: 0x8, addend: 0x0, symName: __ZNSt6vectorISt4pairIxxESaIS1_EED1Ev, symObjAddr: 0xE0, symBinAddr: 0x1000076E0, symSize: 0x20 }
+  - { offset: 0x21D92, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x4A0, symBinAddr: 0x100007B60, symSize: 0x194 }
+  - { offset: 0x222E2, size: 0x8, addend: 0x0, symName: __ZSt16__insertion_sortIPxN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_.isra.0, symObjAddr: 0x0, symBinAddr: 0x100007600, symSize: 0xE0 }
+  - { offset: 0x22533, size: 0x8, addend: 0x0, symName: __ZSt16__introsort_loopIPxlN9__gnu_cxx5__ops15_Iter_less_iterEEvT_S4_T0_T1_.isra.0, symObjAddr: 0x100, symBinAddr: 0x100007700, symSize: 0x384 }
+...
